@@ -29,6 +29,13 @@ class AppFixtures extends Fixture
             $passHash = $this->encoder->encodePassword($user,'password');
             $user->setEmail($fake->email)
                 ->setPassword($passHash);
+
+            if ($u % 3 === 0)
+            {
+                $user->setStatus(false)
+                    ->setAge(22);
+            }
+
             $manager->persist($user);
         }
 
