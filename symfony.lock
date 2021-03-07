@@ -131,9 +131,6 @@
     "lcobucci/clock": {
         "version": "1.4.0"
     },
-    "lcobucci/jose-parsing": {
-        "version": "2.2.0"
-    },
     "lcobucci/jwt": {
         "version": "4.0.0-alpha1"
     },
