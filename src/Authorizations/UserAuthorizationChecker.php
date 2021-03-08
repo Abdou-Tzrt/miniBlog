@@ -41,7 +41,7 @@ class UserAuthorizationChecker
     {
         if (null === $this->user)
         {
-            $errorMessage = "You are not Authoticated";
+            $errorMessage = "You are not Authenticated";
             throw new UnauthorizedHttpException($errorMessage,$errorMessage);
         }
     }
